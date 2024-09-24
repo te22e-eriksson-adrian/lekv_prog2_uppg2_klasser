@@ -1,8 +1,17 @@
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
+        System.out.println("(Program started)");
+        System.out.println();
 
-        Player p1 = new Player("Belerothon", 50);
-        Enemy p1 = new Enemy("Caimera", 40);
+        Player theHero = new Player();
+        Player theEnemy = new Player();
+
+        theHero.name = "Belerothon";
+        theHero.healthPower = 20;
+        System.out.println(theHero.name+" has "+theHero.healthPower);
+
+        theEnemy.name = "Caimera";
+        theEnemy.healthPower = 20;
+        System.out.println(theEnemy.name+" has "+theEnemy.healthPower);
     }
 }
